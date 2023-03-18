@@ -1,0 +1,6 @@
+framework module Pods_Kings_Drinking_App {
+  umbrella header "Pods-Kings Drinking App-umbrella.h"
+
+  export *
+  module * { export * }
+}

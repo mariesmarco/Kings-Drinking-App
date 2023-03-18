@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B5ECFBE4457FF21A5644C38 /* Pods_Kings_Drinking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0802E9EF761364CB249C6B9 /* Pods_Kings_Drinking_App.framework */; };
+		F981B61C29C646DE00D76F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981B61B29C646DE00D76F01 /* AppDelegate.swift */; };
+		F981B61E29C646DE00D76F01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981B61D29C646DE00D76F01 /* SceneDelegate.swift */; };
+		F981B62029C646DE00D76F01 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981B61F29C646DE00D76F01 /* WelcomeViewController.swift */; };
+		F981B62329C646DE00D76F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F981B62129C646DE00D76F01 /* Main.storyboard */; };
+		F981B62529C646DF00D76F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F981B62429C646DF00D76F01 /* Assets.xcassets */; };
+		F981B62829C646DF00D76F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F981B62629C646DF00D76F01 /* LaunchScreen.storyboard */; };
+		F9B02DA829C6587500185433 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B02DA729C6587500185433 /* PlaygroundViewController.swift */; };
+		F9EDA71F29C6529300130F73 /* ChoosePlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		712FE22A65D443AE18985CE5 /* Pods-Kings Drinking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kings Drinking App.debug.xcconfig"; path = "Target Support Files/Pods-Kings Drinking App/Pods-Kings Drinking App.debug.xcconfig"; sourceTree = "<group>"; };
+		A0802E9EF761364CB249C6B9 /* Pods_Kings_Drinking_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kings_Drinking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9688E766807628032ABB5F9 /* Pods-Kings Drinking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kings Drinking App.release.xcconfig"; path = "Target Support Files/Pods-Kings Drinking App/Pods-Kings Drinking App.release.xcconfig"; sourceTree = "<group>"; };
+		F981B61829C646DE00D76F01 /* Kings Drinking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kings Drinking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F981B61B29C646DE00D76F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F981B61D29C646DE00D76F01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F981B61F29C646DE00D76F01 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F981B62229C646DE00D76F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F981B62429C646DF00D76F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F981B62729C646DF00D76F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F981B62929C646DF00D76F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B02DA729C6587500185433 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
+		F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayersViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F981B61529C646DE00D76F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B5ECFBE4457FF21A5644C38 /* Pods_Kings_Drinking_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B234B3D458EEA41041BD568 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				712FE22A65D443AE18985CE5 /* Pods-Kings Drinking App.debug.xcconfig */,
+				E9688E766807628032ABB5F9 /* Pods-Kings Drinking App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		81244EEB7FFC4E81C346C2C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0802E9EF761364CB249C6B9 /* Pods_Kings_Drinking_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F981B60F29C646DE00D76F01 = {
+			isa = PBXGroup;
+			children = (
+				F981B61A29C646DE00D76F01 /* Kings Drinking App */,
+				F981B61929C646DE00D76F01 /* Products */,
+				7B234B3D458EEA41041BD568 /* Pods */,
+				81244EEB7FFC4E81C346C2C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F981B61929C646DE00D76F01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F981B61829C646DE00D76F01 /* Kings Drinking App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F981B61A29C646DE00D76F01 /* Kings Drinking App */ = {
+			isa = PBXGroup;
+			children = (
+				F981B62F29C646ED00D76F01 /* Model */,
+				F981B63029C646F500D76F01 /* View */,
+				F981B63129C646F900D76F01 /* Controllers */,
+				F981B62429C646DF00D76F01 /* Assets.xcassets */,
+				F981B63229C6470300D76F01 /* Support FIles */,
+				F981B62929C646DF00D76F01 /* Info.plist */,
+			);
+			path = "Kings Drinking App";
+			sourceTree = "<group>";
+		};
+		F981B62F29C646ED00D76F01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F981B63029C646F500D76F01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F981B62129C646DE00D76F01 /* Main.storyboard */,
+				F981B62629C646DF00D76F01 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F981B63129C646F900D76F01 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F981B61F29C646DE00D76F01 /* WelcomeViewController.swift */,
+				F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */,
+				F9B02DA729C6587500185433 /* PlaygroundViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F981B63229C6470300D76F01 /* Support FIles */ = {
+			isa = PBXGroup;
+			children = (
+				F981B61B29C646DE00D76F01 /* AppDelegate.swift */,
+				F981B61D29C646DE00D76F01 /* SceneDelegate.swift */,
+			);
+			path = "Support FIles";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F981B61729C646DE00D76F01 /* Kings Drinking App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F981B62C29C646DF00D76F01 /* Build configuration list for PBXNativeTarget "Kings Drinking App" */;
+			buildPhases = (
+				065052B2A41834AA47F92BBE /* [CP] Check Pods Manifest.lock */,
+				F981B61429C646DE00D76F01 /* Sources */,
+				F981B61529C646DE00D76F01 /* Frameworks */,
+				F981B61629C646DE00D76F01 /* Resources */,
+				982B7B5BE2E5C3E32A25ED57 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kings Drinking App";
+			productName = "Kings Drinking App";
+			productReference = F981B61829C646DE00D76F01 /* Kings Drinking App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F981B61029C646DE00D76F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F981B61729C646DE00D76F01 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F981B61329C646DE00D76F01 /* Build configuration list for PBXProject "Kings Drinking App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F981B60F29C646DE00D76F01;
+			productRefGroup = F981B61929C646DE00D76F01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F981B61729C646DE00D76F01 /* Kings Drinking App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F981B61629C646DE00D76F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F981B62829C646DF00D76F01 /* LaunchScreen.storyboard in Resources */,
+				F981B62529C646DF00D76F01 /* Assets.xcassets in Resources */,
+				F981B62329C646DE00D76F01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065052B2A41834AA47F92BBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kings Drinking App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		982B7B5BE2E5C3E32A25ED57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kings Drinking App/Pods-Kings Drinking App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kings Drinking App/Pods-Kings Drinking App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kings Drinking App/Pods-Kings Drinking App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F981B61429C646DE00D76F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9EDA71F29C6529300130F73 /* ChoosePlayersViewController.swift in Sources */,
+				F981B62029C646DE00D76F01 /* WelcomeViewController.swift in Sources */,
+				F981B61C29C646DE00D76F01 /* AppDelegate.swift in Sources */,
+				F9B02DA829C6587500185433 /* PlaygroundViewController.swift in Sources */,
+				F981B61E29C646DE00D76F01 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F981B62129C646DE00D76F01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F981B62229C646DE00D76F01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F981B62629C646DF00D76F01 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F981B62729C646DF00D76F01 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F981B62A29C646DF00D76F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F981B62B29C646DF00D76F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F981B62D29C646DF00D76F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 712FE22A65D443AE18985CE5 /* Pods-Kings Drinking App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y285T96JW7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kings Drinking App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariesmarco.Kings-Drinking-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F981B62E29C646DF00D76F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9688E766807628032ABB5F9 /* Pods-Kings Drinking App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y285T96JW7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Kings Drinking App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariesmarco.Kings-Drinking-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F981B61329C646DE00D76F01 /* Build configuration list for PBXProject "Kings Drinking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F981B62A29C646DF00D76F01 /* Debug */,
+				F981B62B29C646DF00D76F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F981B62C29C646DF00D76F01 /* Build configuration list for PBXNativeTarget "Kings Drinking App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F981B62D29C646DF00D76F01 /* Debug */,
+				F981B62E29C646DF00D76F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F981B61029C646DE00D76F01 /* Project object */;
+}
