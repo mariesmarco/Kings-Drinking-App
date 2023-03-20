@@ -11,8 +11,12 @@ class ChoosePlayersViewController: UIViewController, UITextFieldDelegate {
     
     var playersBrain = PlayersBrain()
     
+    
     //declaring IBOutlets
     @IBOutlet weak var inputPlayerTextField: UITextField!
+    
+    @IBOutlet weak var infoPlayersLabel: UILabel!
+    
     
     //declaring IBActions
     @IBAction func startPlayingButtonPressed(_ sender: UIButton) {
@@ -22,18 +26,18 @@ class ChoosePlayersViewController: UIViewController, UITextFieldDelegate {
    
     @IBAction func addToListButtonPressed(_ sender: UIButton) {
         
-        playersBrain.addPlayerToArray(userTextFieldInput: inputPlayerTextField.text!)
+         playersBrain.addPlayerToArray(userTextFieldInput: inputPlayerTextField.text!)
         inputPlayerTextField.text = ""
-        
     }
     
     @IBAction func clearListButtonPressed(_ sender: UIButton) {
-        
         playersBrain.clearList()
+        playersBrain.playerNumber = 0
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputPlayerTextField.placeholder = "Insert player's name"
     
         //delegates for the text fields
         inputPlayerTextField.delegate = self
@@ -42,7 +46,9 @@ class ChoosePlayersViewController: UIViewController, UITextFieldDelegate {
     //prepare for the next screen
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier ==  "goToPlaygroundScreen" {
-            _ = segue.destination as! PlaygroundViewController
+            let playersInGame = playersBrain.players
+            let destinationVC = segue.destination as! PlaygroundViewController
+            destinationVC.inGamePlayers = playersInGame
         }
     }
     

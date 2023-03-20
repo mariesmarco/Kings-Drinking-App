@@ -734,7 +734,7 @@
                                     <action selector="clearListButtonPressed:" destination="dU7-NW-OrJ" eventType="touchUpInside" id="iht-yj-9oC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-U9-WSZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info about current name of players (not done yet)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-U9-WSZ">
                                 <rect key="frame" x="16" y="570" width="377" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -763,6 +763,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="AE5-7Y-L5V"/>
                     <connections>
+                        <outlet property="infoPlayersLabel" destination="6F5-U9-WSZ" id="XvB-r0-sfu"/>
                         <outlet property="inputPlayerTextField" destination="25f-7f-IuE" id="uyz-vh-DnB"/>
                         <segue destination="SbI-qy-0PJ" kind="show" identifier="goToPlaygroundScreen" id="xuw-Px-PG8"/>
                     </connections>

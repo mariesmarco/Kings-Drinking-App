@@ -2,42 +2,25 @@ import Foundation
 
 struct PlayersBrain{
     var players: [String] = []
-    var playerPosition: Int = 0
+    var playerNumber: Int = 0
+    var playerName: String = ""
     
     mutating func addPlayerToArray(userTextFieldInput: String){
-        print(players)
         players.append(userTextFieldInput)
         print(players)
+        
     }
     
     mutating func clearList() {
         players = []
+        playerNumber = 0
         print(players)
     }
     
-    func getPlayers() -> [String] {
-        
+    mutating func getPlayersArray() -> [String] {
         return players
     }
+}
     
-    mutating func nextPlayersPosition()   {
-        
-        if playerPosition + 1 < players.count {
-            playerPosition += 1
-            
-        } else {
-            playerPosition = 0
-            
-        }
-        
-    }
     
-    //mutating func printPlayer() -> String{
-       // nextPlayersPosition()
-        //var playersName: String! = players[playerPosition]
-       // return playersName
-       // }
-    }
-
-
-
+    
