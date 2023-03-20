@@ -23,6 +23,7 @@ class ChoosePlayersViewController: UIViewController, UITextFieldDelegate {
     @IBAction func addToListButtonPressed(_ sender: UIButton) {
         
         playersBrain.addPlayerToArray(userTextFieldInput: inputPlayerTextField.text!)
+        inputPlayerTextField.text = ""
         
     }
     

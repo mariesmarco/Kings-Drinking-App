@@ -16,16 +16,28 @@ struct PlayersBrain{
     }
     
     func getPlayers() -> [String] {
+        
         return players
     }
     
-   /* func printPlayer() {
-        for player in players{
-            var playerString: String! = player
-            print(playerString)
+    mutating func nextPlayersPosition()   {
+        
+        if playerPosition + 1 < players.count {
+            playerPosition += 1
+            
+        } else {
+            playerPosition = 0
             
         }
-    }*/
-}
+        
+    }
+    
+    //mutating func printPlayer() -> String{
+       // nextPlayersPosition()
+        //var playersName: String! = players[playerPosition]
+       // return playersName
+       // }
+    }
+
 
 
