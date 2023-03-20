@@ -808,10 +808,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gN2-vv-u2l">
-                                <rect key="frame" x="0.0" y="718" width="393" height="100"/>
+                                <rect key="frame" x="0.0" y="765" width="393" height="53"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rup-la-54z">
-                                        <rect key="frame" x="82" y="42" width="229" height="50"/>
+                                        <rect key="frame" x="82" y="1" width="229" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="wle-ah-uAi"/>
                                         </constraints>
@@ -829,23 +829,40 @@
                                 <color key="backgroundColor" name="Background Color"/>
                                 <color key="tintColor" name="Background Color"/>
                                 <constraints>
-                                    <constraint firstItem="rup-la-54z" firstAttribute="bottom" secondItem="gN2-vv-u2l" secondAttribute="bottomMargin" id="BYd-0z-w8P"/>
+                                    <constraint firstItem="rup-la-54z" firstAttribute="bottom" secondItem="gN2-vv-u2l" secondAttribute="bottomMargin" constant="6" id="BYd-0z-w8P"/>
                                     <constraint firstItem="rup-la-54z" firstAttribute="leading" secondItem="gN2-vv-u2l" secondAttribute="leading" constant="82" id="MaQ-hW-Z4J"/>
-                                    <constraint firstItem="rup-la-54z" firstAttribute="top" secondItem="gN2-vv-u2l" secondAttribute="top" constant="42" id="RZT-Bb-RaT"/>
+                                    <constraint firstItem="rup-la-54z" firstAttribute="top" secondItem="gN2-vv-u2l" secondAttribute="top" constant="1" id="RZT-Bb-RaT"/>
                                     <constraint firstItem="rup-la-54z" firstAttribute="centerX" secondItem="gN2-vv-u2l" secondAttribute="centerX" id="UOx-lw-tCZ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXt-VM-XZI">
                                 <rect key="frame" x="0.0" y="193" width="393" height="548"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e0o-nz-Bv7">
-                                        <rect key="frame" x="36" y="14" width="320" height="520"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e0o-nz-Bv7">
+                                        <rect key="frame" x="36" y="-9" width="321" height="520"/>
                                         <color key="tintColor" name="Background Color"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu7-Hq-EMD" userLabel="New Game Button">
+                                        <rect key="frame" x="142.66666666666666" y="385" width="107" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.1229619013" blue="0.2799628569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="0.1229619013" blue="0.2799628569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="New Game"/>
+                                        <connections>
+                                            <action selector="newGameButtonPressed:" destination="SbI-qy-0PJ" eventType="touchUpInside" id="zBH-Vb-Tmp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Background Color"/>
                                 <color key="tintColor" name="Background Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="iu7-Hq-EMD" secondAttribute="bottom" constant="128" id="I2j-em-mlh"/>
+                                    <constraint firstItem="iu7-Hq-EMD" firstAttribute="centerX" secondItem="uXt-VM-XZI" secondAttribute="centerX" id="RFO-X0-UEa"/>
+                                    <constraint firstItem="e0o-nz-Bv7" firstAttribute="leading" secondItem="uXt-VM-XZI" secondAttribute="leading" constant="36" id="UME-mv-Qlx"/>
+                                    <constraint firstAttribute="bottom" secondItem="e0o-nz-Bv7" secondAttribute="bottom" constant="37" id="c5N-Jv-3ts"/>
+                                    <constraint firstItem="e0o-nz-Bv7" firstAttribute="top" secondItem="uXt-VM-XZI" secondAttribute="top" constant="-9" id="r5z-M7-Tbt"/>
+                                    <constraint firstItem="e0o-nz-Bv7" firstAttribute="centerX" secondItem="uXt-VM-XZI" secondAttribute="centerX" id="shF-HC-cgt"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i4Y-nz-yPf"/>
@@ -865,6 +882,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="NA1-xy-RqW"/>
                     <connections>
+                        <outlet property="newGameLabel" destination="iu7-Hq-EMD" id="Uyg-gd-hwf"/>
                         <outlet property="playerTurnLabel" destination="DFo-oS-la8" id="ZbU-wP-x3V"/>
                         <outlet property="shownCardsImageView" destination="e0o-nz-Bv7" id="6Zh-a4-xAD"/>
                     </connections>

@@ -3,7 +3,6 @@ import Foundation
 struct QuotesBrain {
     
     var quoteNumber: Int = 0
-    
     var quotes = [
         "Bring on the night.",
         "I'm gonna live like tomorrow doesn't exist.",
@@ -20,18 +19,8 @@ struct QuotesBrain {
     }
     
     func showRandomQuote() -> String {
-        
         let randomQuoteElement = quotes.randomElement()
         let randomQuoteString: String! = randomQuoteElement
         return randomQuoteString
-        
-        
-        
-        
-        
-        
-        
-        
     }
-    
 }

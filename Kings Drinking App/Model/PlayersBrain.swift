@@ -10,13 +10,11 @@ struct PlayersBrain{
         print(players)
         
     }
-    
     mutating func clearList() {
         players = []
         playerNumber = 0
         print(players)
     }
-    
     mutating func getPlayersArray() -> [String] {
         return players
     }

@@ -17,8 +17,8 @@
 		F9B02DA829C6587500185433 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B02DA729C6587500185433 /* PlaygroundViewController.swift */; };
 		F9D0A49D29C7246400816965 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D0A49C29C7246400816965 /* RulesViewController.swift */; };
 		F9E8836729C8551D0083C37C /* QuotesBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8836629C8551D0083C37C /* QuotesBrain.swift */; };
-		F9E8836929C867910083C37C /* PlayersBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8836829C867910083C37C /* PlayersBrain.swift */; };
 		F9E8836B29C8793A0083C37C /* CardImageBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8836A29C8793A0083C37C /* CardImageBrain.swift */; };
+		F9E8836F29C8F76C0083C37C /* PlayersBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8836E29C8F76C0083C37C /* PlayersBrain.swift */; };
 		F9EDA71F29C6529300130F73 /* ChoosePlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +37,8 @@
 		F9B02DA729C6587500185433 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
 		F9D0A49C29C7246400816965 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		F9E8836629C8551D0083C37C /* QuotesBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesBrain.swift; sourceTree = "<group>"; };
-		F9E8836829C867910083C37C /* PlayersBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersBrain.swift; sourceTree = "<group>"; };
 		F9E8836A29C8793A0083C37C /* CardImageBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageBrain.swift; sourceTree = "<group>"; };
+		F9E8836E29C8F76C0083C37C /* PlayersBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayersBrain.swift; path = "/Users/marcomaries/Desktop/My Swift Progects/Kings Drinking App/Kings Drinking App/Model/PlayersBrain.swift"; sourceTree = "<absolute>"; };
 		F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,8 +105,8 @@
 		F981B62F29C646ED00D76F01 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9E8836E29C8F76C0083C37C /* PlayersBrain.swift */,
 				F9E8836629C8551D0083C37C /* QuotesBrain.swift */,
-				F9E8836829C867910083C37C /* PlayersBrain.swift */,
 				F9E8836A29C8793A0083C37C /* CardImageBrain.swift */,
 			);
 			path = Model;
@@ -258,11 +258,11 @@
 			files = (
 				F9D0A49D29C7246400816965 /* RulesViewController.swift in Sources */,
 				F9E8836B29C8793A0083C37C /* CardImageBrain.swift in Sources */,
-				F9E8836929C867910083C37C /* PlayersBrain.swift in Sources */,
 				F9E8836729C8551D0083C37C /* QuotesBrain.swift in Sources */,
 				F9EDA71F29C6529300130F73 /* ChoosePlayersViewController.swift in Sources */,
 				F981B61C29C646DE00D76F01 /* AppDelegate.swift in Sources */,
 				F918D90829C7A323000BAFFC /* WelcomeViewController.swift in Sources */,
+				F9E8836F29C8F76C0083C37C /* PlayersBrain.swift in Sources */,
 				F9B02DA829C6587500185433 /* PlaygroundViewController.swift in Sources */,
 				F981B61E29C646DE00D76F01 /* SceneDelegate.swift in Sources */,
 			);
