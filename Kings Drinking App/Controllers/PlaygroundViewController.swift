@@ -3,7 +3,9 @@ import UIKit
 class PlaygroundViewController: UIViewController {
 
     var playersBrain = PlayersBrain()
-    let cardImagesBrain = CardsImageBrain()
+    var cardImagesBrain = CardsImageBrain()
+    var curentPlayerNumber = 0
+    var inGamePlayers: [String] = ["No player introduced!"]
     
     //declaring IBOutlets
     @IBOutlet weak var playerTurnLabel: UILabel!
@@ -11,25 +13,33 @@ class PlaygroundViewController: UIViewController {
     
     //declaring IBActions
     @IBAction func chooseButtonPressed(_ sender: UIButton) {
-        
-        //playersBrain.nextPlayersPosition()
+        nextPlayer()
         updateUI()
+        
+        
     }
     
     
     
-    
-    
-    
+    func nextPlayer(){
+        if curentPlayerNumber + 1 < inGamePlayers.count {
+            curentPlayerNumber += 1
+        } else {
+            curentPlayerNumber = 0
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
+        shownCardsImageView.image = UIImage(named: "1B")
+    
     }
     
     func updateUI(){
-      //  playerTurnLabel.text = playersBrain.printPlayer()
+        let playersTurnString = "\(inGamePlayers[curentPlayerNumber])'s TURN"
+        playerTurnLabel.text = playersTurnString
         shownCardsImageView.image = cardImagesBrain.getRandomCard()
     }
    
+    
 }

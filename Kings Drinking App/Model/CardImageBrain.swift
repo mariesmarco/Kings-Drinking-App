@@ -3,7 +3,8 @@ import UIKit
 struct CardsImageBrain{
  //   let imagesArray = Bundle.main.urls(forResourcesWithExtension: "png", subdirectory: "Poker Cards Images")
     //NOT COMPLETE, just experimental
-    let images = [
+    var currentCardNumber = 0
+    let cards = [
         UIImage(named: "1J"),
         UIImage(named: "2S"),
         UIImage(named: "2C"),
@@ -39,8 +40,12 @@ struct CardsImageBrain{
         UIImage(named: "9H")
     ]
     
-    func getRandomCard() -> UIImage{
-        let nextCard =  images.randomElement()!
+    mutating func getRandomCard() -> UIImage{
+        let nextCard = cards.randomElement()!
         return nextCard!
+    }
+    
+    func endOfCards() {
+        
     }
 }
