@@ -5,20 +5,19 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="Kings_Drinking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btS-LC-LUR">
-                                <rect key="frame" x="6" y="779" width="381" height="39"/>
+                                <rect key="frame" x="168" y="779" width="57" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="sZd-OJ-WYK"/>
                                 </constraints>
@@ -33,193 +32,655 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38L-Vs-TrE">
-                                <rect key="frame" x="117.66666666666667" y="596" width="157.66666666666663" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="eHB-Z5-EUd"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P4-Q9-Vni">
+                                <rect key="frame" x="163.33333333333334" y="701" width="66.333333333333343" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Start Playin'">
-                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="26"/>
-                                    <color key="baseForegroundColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled" title="Rules"/>
+                                <connections>
+                                    <action selector="rulesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0R-La-MhD"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNr-Ll-lvk">
-                                <rect key="frame" x="33" y="377" width="327" height="98"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fza-A4-meF">
+                                <rect key="frame" x="136" y="631" width="121" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Start "/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PvE-qq-QOH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcs-UQ-d7a">
+                                <rect key="frame" x="16" y="65" width="361" height="272"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Lets">
+                                    <fragment content="SOME QUOTE">
                                         <attributes>
                                             <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <font key="NSOriginalFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="play">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <font key="NSOriginalFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="the">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <font key="NSOriginalFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="King's">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <font key="NSOriginalFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Game">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <font key="NSOriginalFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="👑">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" metaFont="system" size="32"/>
-                                            <font key="NSOriginalFont" size="32" name="Baskerville"/>
+                                            <font key="NSFont" size="40" name="Baskerville-Italic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rje-qy-3LN">
-                                <rect key="frame" x="153" y="676" width="86.666666666666686" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMt-Mc-Sde" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                <rect key="frame" x="40" y="413" width="313" height="98"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Hvj-Wk-5H9"/>
+                                    <constraint firstAttribute="height" constant="98" id="WD8-Ag-qLw"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Rules">
-                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="26"/>
-                                    <color key="baseForegroundColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
-                                </buttonConfiguration>
-                            </button>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lets play the Kings Game ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="32" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="👑">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="32" name="AppleColorEmoji"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="rje-qy-3LN" firstAttribute="top" secondItem="38L-Vs-TrE" secondAttribute="bottom" constant="30" id="4lX-vr-6jA"/>
-                            <constraint firstItem="38L-Vs-TrE" firstAttribute="centerX" secondItem="btS-LC-LUR" secondAttribute="centerX" id="J80-hj-a9F"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rje-qy-3LN" secondAttribute="trailing" symbolic="YES" id="Nzy-0d-IEC"/>
-                            <constraint firstAttribute="bottom" secondItem="38L-Vs-TrE" secondAttribute="bottom" constant="206" id="cxQ-sC-oDf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7P4-Q9-Vni" secondAttribute="trailing" constant="163.33000000000001" id="3wE-IV-WXe"/>
+                            <constraint firstItem="btS-LC-LUR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6bM-6B-YLq"/>
+                            <constraint firstItem="7P4-Q9-Vni" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B4V-qy-BxH"/>
+                            <constraint firstItem="Fza-A4-meF" firstAttribute="centerX" secondItem="7P4-Q9-Vni" secondAttribute="centerX" id="BSW-tb-RV7"/>
+                            <constraint firstItem="gcs-UQ-d7a" firstAttribute="centerX" secondItem="fMt-Mc-Sde" secondAttribute="centerX" id="CwR-DU-z51"/>
+                            <constraint firstItem="7P4-Q9-Vni" firstAttribute="top" secondItem="Fza-A4-meF" secondAttribute="bottom" constant="35" id="Dut-3s-zgB"/>
+                            <constraint firstItem="Fza-A4-meF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H2T-c6-jcd"/>
+                            <constraint firstItem="btS-LC-LUR" firstAttribute="top" secondItem="7P4-Q9-Vni" secondAttribute="bottom" constant="43" id="Mru-x9-COJ"/>
+                            <constraint firstItem="fMt-Mc-Sde" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="413" id="T8B-gP-7GZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="btS-LC-LUR" secondAttribute="trailing" constant="168" id="XSY-fs-SNA"/>
+                            <constraint firstItem="Fza-A4-meF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bQ1-Oh-zeO"/>
+                            <constraint firstItem="gcs-UQ-d7a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cls-GJ-J0v"/>
                             <constraint firstItem="btS-LC-LUR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dPN-9g-kyO"/>
-                            <constraint firstItem="pNr-Ll-lvk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="fBh-zG-Zp9"/>
-                            <constraint firstItem="pNr-Ll-lvk" firstAttribute="centerX" secondItem="btS-LC-LUR" secondAttribute="centerX" id="gBe-bB-VaK"/>
-                            <constraint firstItem="pNr-Ll-lvk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ngg-RQ-82S"/>
-                            <constraint firstItem="rje-qy-3LN" firstAttribute="leading" secondItem="38L-Vs-TrE" secondAttribute="leading" constant="35.333333333333329" id="nhB-Qg-6IP"/>
-                            <constraint firstItem="pNr-Ll-lvk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oJT-Cb-r4y"/>
-                            <constraint firstItem="btS-LC-LUR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="stq-aS-RVp"/>
-                            <constraint firstItem="pNr-Ll-lvk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="274" id="xpt-03-lqF"/>
+                            <constraint firstItem="fMt-Mc-Sde" firstAttribute="centerX" secondItem="Fza-A4-meF" secondAttribute="centerX" id="eBA-oX-Qs2"/>
+                            <constraint firstItem="fMt-Mc-Sde" firstAttribute="top" secondItem="gcs-UQ-d7a" secondAttribute="bottom" constant="76" id="gTY-Rc-l4H"/>
+                            <constraint firstItem="gcs-UQ-d7a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-38" id="ghf-3c-T66"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fza-A4-meF" secondAttribute="trailing" constant="136" id="h8X-dZ-0bg"/>
+                            <constraint firstItem="fMt-Mc-Sde" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="i9g-PD-LER"/>
+                            <constraint firstItem="btS-LC-LUR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="stq-aS-RVp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Yua-Ba-1Tm"/>
                     <connections>
-                        <segue destination="dU7-NW-OrJ" kind="show" identifier="goToChoosePlayersScreen" id="wPb-c8-lPb"/>
-                        <segue destination="fLn-dE-TL3" kind="presentation" identifier="goToRulesScreen" id="n6F-Dc-puY"/>
+                        <outlet property="quoteLabel" destination="gcs-UQ-d7a" id="h0z-k0-woB"/>
+                        <outlet property="welcomeTextLabel" destination="fMt-Mc-Sde" id="cCR-a7-YeS"/>
+                        <segue destination="dU7-NW-OrJ" kind="show" identifier="goToChoosePlayersScreen" id="CFu-US-az9"/>
+                        <segue destination="fLn-dE-TL3" kind="show" identifier="goToRulesScreen" id="4gV-mp-7kZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="969" y="4"/>
+            <point key="canvasLocation" x="968.70229007633588" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Rules View Controller-->
         <scene sceneID="sbV-2W-iih">
             <objects>
-                <viewController id="fLn-dE-TL3" sceneMemberID="viewController">
+                <viewController id="fLn-dE-TL3" customClass="RulesViewController" customModule="Kings_Drinking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z3Q-ex-7FX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLp-5I-fQd">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kL-Vd-NZM">
-                                        <rect key="frame" x="8" y="67" width="377" height="708"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="RULES">
-                                                <attributes>
-                                                    <font key="NSFont" metaFont="system" size="17"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" name="Background Color"/>
-                                <constraints>
-                                    <constraint firstItem="8kL-Vd-NZM" firstAttribute="bottom" secondItem="NLp-5I-fQd" secondAttribute="bottomMargin" id="0qq-Ym-gOc"/>
-                                    <constraint firstItem="8kL-Vd-NZM" firstAttribute="trailing" secondItem="NLp-5I-fQd" secondAttribute="trailingMargin" id="AX1-HS-W0K"/>
-                                    <constraint firstItem="8kL-Vd-NZM" firstAttribute="left" secondItem="NLp-5I-fQd" secondAttribute="leftMargin" id="FYs-UZ-knm"/>
-                                    <constraint firstItem="8kL-Vd-NZM" firstAttribute="top" secondItem="NLp-5I-fQd" secondAttribute="topMargin" id="kQr-Dm-FJB"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8kL-Vd-NZM">
+                                <rect key="frame" x="-2" y="103" width="395" height="727"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Ace: Waterfall - 
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">2: You - Whoever drew the card assigns a drink
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">3: Me - Whoever drew the card drinks
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">4: Floor - Everyone races to touch the floor, last person to do so drinks
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">5: Guys - All guys drink
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">6: Chicks - All girls drink
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">7: Heaven - All players point towards the sky, last player to do so drinks
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">8: Mate - Pick a person to drink with
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">9: Rhyme - Say a phrase, and everyone else must say phrases that rhyme
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="10: ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Categories">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <url key="NSLink" string="https://drinkinggamezone.com/drinking-games/categories/"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> - Pick a category, and say something from that category (i.e. if "drinking games" was the category, "kings" would be a viable answer.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Jack: Never have I ever - Each player puts up 3 fingers, then starting with the person who drew the card, each player says "never have I ever «something»". If you've done it, you put a finger down, until someone loses
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Queen: Questions - The person who drew the card asks a random person a question, and they then turn and ask a random person a question, until someone loses by either failing to ask a question or by responding to the person who just asked them a question
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	•	</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="King: Ruler - Make a rule that everyone must follow until the next King is drawn ">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="18" name="Baskerville"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" paragraphSpacing="9" headIndent="36" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Iht-ba-kBu"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="NLp-5I-fQd" firstAttribute="top" secondItem="z3Q-ex-7FX" secondAttribute="top" id="9HJ-ps-aeL"/>
-                            <constraint firstItem="NLp-5I-fQd" firstAttribute="trailing" secondItem="Iht-ba-kBu" secondAttribute="trailing" id="9sV-20-wKd"/>
-                            <constraint firstItem="NLp-5I-fQd" firstAttribute="bottom" secondItem="Iht-ba-kBu" secondAttribute="bottom" id="WZw-Om-YNc"/>
-                            <constraint firstItem="NLp-5I-fQd" firstAttribute="leading" secondItem="Iht-ba-kBu" secondAttribute="leading" id="lGW-Hh-s5z"/>
+                            <constraint firstItem="8kL-Vd-NZM" firstAttribute="trailing" secondItem="Iht-ba-kBu" secondAttribute="trailing" id="5Jl-NE-j9H"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8kL-Vd-NZM" secondAttribute="bottom" constant="-12" id="Wwi-GA-KWv"/>
+                            <constraint firstItem="8kL-Vd-NZM" firstAttribute="top" secondItem="Iht-ba-kBu" secondAttribute="top" id="ili-v4-Jc7"/>
+                            <constraint firstItem="8kL-Vd-NZM" firstAttribute="leading" secondItem="z3Q-ex-7FX" secondAttribute="leadingMargin" constant="-18" id="vmh-8D-OFh"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2Em-O3-f2n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lC5-y2-3Mz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="968.70229007633588" y="770.4225352112677"/>
+            <point key="canvasLocation" x="1841.9847328244275" y="438.73239436619718"/>
         </scene>
         <!--Choose Players View Controller-->
         <scene sceneID="btc-YH-OYx">
@@ -229,244 +690,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hla-jJ-FX0">
-                                <rect key="frame" x="16" y="123" width="298" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLS-me-ZuO">
+                                <rect key="frame" x="0.0" y="103" width="268" height="60"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Name the Kings:">
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
+                                            <font key="NSFont" size="37" name="Baskerville"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ke-GS-4ud">
-                                <rect key="frame" x="16" y="198" width="129" height="80"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="First">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJn-JB-aFs">
-                                <rect key="frame" x="16" y="252" width="129" height="80"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Second">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zN-1y-9q4">
-                                <rect key="frame" x="16" y="307" width="129" height="80"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Third">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3K-VQ-Oih">
-                                <rect key="frame" x="16" y="361" width="129" height="80"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Fourth">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xh2-gb-uKn">
-                                <rect key="frame" x="16" y="424" width="129" height="80"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Fifth">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zON-Gc-Sp3">
-                                <rect key="frame" x="16" y="478" width="129" height="80"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Sixth">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGV-qZ-Fyd">
-                                <rect key="frame" x="16" y="533" width="129" height="80"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Seventh">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW2-17-fC4">
-                                <rect key="frame" x="16" y="587" width="129" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="129" id="FxH-pV-PLk"/>
-                                    <constraint firstAttribute="height" constant="80" id="Zwt-Hg-ttn"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Eighth">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="32" name="Baskerville-BoldItalic"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9lL-rK-H4I">
-                                <rect key="frame" x="167" y="275" width="210" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25f-7f-IuE">
+                                <rect key="frame" x="16" y="255" width="361" height="34"/>
+                                <color key="backgroundColor" red="0.87450980389999999" green="1" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.87450980389999999" green="1" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FQY-dk-VGl">
-                                <rect key="frame" x="167" y="221" width="210" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8Z-ht-xQO">
-                                <rect key="frame" x="167" y="447" width="210" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uoe-Ca-Rk5">
-                                <rect key="frame" x="167" y="384" width="210" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gTQ-Y7-k2x">
-                                <rect key="frame" x="167" y="330" width="210" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="84h-VA-vE9">
-                                <rect key="frame" x="167" y="501" width="210" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2X-U7-i9e">
-                                <rect key="frame" x="167" y="556" width="210" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jiS-4H-5n1">
-                                <rect key="frame" x="167" y="610" width="210" height="34"/>
-                                <color key="backgroundColor" red="0.95617409890000005" green="1" blue="0.96806158470000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtZ-IK-Wad">
-                                <rect key="frame" x="83" y="725" width="227" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ppo-2C-aWa"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pou-w1-bBt">
+                                <rect key="frame" x="136" y="756" width="121" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="To the playground">
-                                    <fontDescription key="titleFontDescription" type="italicSystem" pointSize="26"/>
-                                    <color key="baseForegroundColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="filled" title="Start Playing"/>
+                                <connections>
+                                    <action selector="startPlayingButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gI-YA-q9V"/>
+                                    <action selector="startPlayingButtonPressed:" destination="dU7-NW-OrJ" eventType="touchUpInside" id="dtY-HW-Ed8"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixK-bP-bVC">
+                                <rect key="frame" x="146.33333333333334" y="359" width="100.33333333333334" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add to list"/>
+                                <connections>
+                                    <action selector="addToListButtonPressed:" destination="dU7-NW-OrJ" eventType="touchUpInside" id="ga4-iS-a38"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97Q-13-PHh">
+                                <rect key="frame" x="144" y="443" width="105" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Clear list"/>
+                                <connections>
+                                    <action selector="clearListButtonPressed:" destination="dU7-NW-OrJ" eventType="touchUpInside" id="iht-yj-9oC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-U9-WSZ">
+                                <rect key="frame" x="16" y="570" width="377" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PfM-ss-aLA"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="Hla-jJ-FX0" secondAttribute="leading" id="2WI-eh-amT"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="2zN-1y-9q4" secondAttribute="leading" id="9XF-2D-y6y"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="tGV-qZ-Fyd" secondAttribute="leading" id="A2c-VZ-4bT"/>
-                            <constraint firstItem="JtZ-IK-Wad" firstAttribute="leading" secondItem="PfM-ss-aLA" secondAttribute="leading" constant="83" id="Ch5-r3-tlQ"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="xh2-gb-uKn" secondAttribute="leading" id="Ck8-pP-uZT"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="zON-Gc-Sp3" secondAttribute="leading" id="DZT-qq-vpa"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="top" secondItem="zON-Gc-Sp3" secondAttribute="bottom" constant="29" id="E46-fl-KpT"/>
-                            <constraint firstItem="JtZ-IK-Wad" firstAttribute="top" secondItem="SW2-17-fC4" secondAttribute="bottom" constant="58" id="FFo-AW-Sk2"/>
-                            <constraint firstItem="jiS-4H-5n1" firstAttribute="leading" secondItem="SW2-17-fC4" secondAttribute="trailing" constant="22" id="Kpn-Qv-WAs"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="trailing" secondItem="E3K-VQ-Oih" secondAttribute="trailing" id="OVB-U7-WYs"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="E3K-VQ-Oih" secondAttribute="leading" id="Qhc-1O-mur"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="trailing" secondItem="4ke-GS-4ud" secondAttribute="trailing" id="RSd-Ie-OtU"/>
-                            <constraint firstItem="PfM-ss-aLA" firstAttribute="bottom" secondItem="JtZ-IK-Wad" secondAttribute="bottom" constant="43" id="SJI-mZ-dfU"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="trailing" secondItem="QJn-JB-aFs" secondAttribute="trailing" id="UQV-jo-r2p"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="trailing" secondItem="2zN-1y-9q4" secondAttribute="trailing" id="dhn-hv-I7q"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="QJn-JB-aFs" secondAttribute="leading" id="eZP-ot-4b6"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="trailing" secondItem="xh2-gb-uKn" secondAttribute="trailing" id="egN-fz-wrE"/>
-                            <constraint firstItem="JtZ-IK-Wad" firstAttribute="centerX" secondItem="iNp-EA-9hK" secondAttribute="centerX" id="frG-Wh-5jY"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="centerY" secondItem="jiS-4H-5n1" secondAttribute="centerY" id="gfG-LJ-8YP"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="trailing" secondItem="zON-Gc-Sp3" secondAttribute="trailing" id="gwg-DQ-kss"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="trailing" secondItem="tGV-qZ-Fyd" secondAttribute="trailing" id="kcc-6n-btf"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="4ke-GS-4ud" secondAttribute="leading" id="rPw-Xm-dGd"/>
-                            <constraint firstItem="SW2-17-fC4" firstAttribute="leading" secondItem="iNp-EA-9hK" secondAttribute="leadingMargin" id="vZT-nE-fzs"/>
+                            <constraint firstItem="tLS-me-ZuO" firstAttribute="top" secondItem="PfM-ss-aLA" secondAttribute="top" id="11c-Wf-vay"/>
+                            <constraint firstItem="PfM-ss-aLA" firstAttribute="bottom" secondItem="Pou-w1-bBt" secondAttribute="bottom" constant="27" id="3fd-Kd-XF8"/>
+                            <constraint firstItem="25f-7f-IuE" firstAttribute="leading" secondItem="iNp-EA-9hK" secondAttribute="leadingMargin" id="5sF-4N-272"/>
+                            <constraint firstItem="tLS-me-ZuO" firstAttribute="left" secondItem="PfM-ss-aLA" secondAttribute="left" id="8R2-2f-2E0"/>
+                            <constraint firstAttribute="bottom" secondItem="97Q-13-PHh" secondAttribute="bottom" constant="374" id="BBp-z2-5OC"/>
+                            <constraint firstItem="Pou-w1-bBt" firstAttribute="centerX" secondItem="iNp-EA-9hK" secondAttribute="centerX" id="Prp-1t-PmU"/>
+                            <constraint firstItem="25f-7f-IuE" firstAttribute="centerX" secondItem="ixK-bP-bVC" secondAttribute="centerX" id="UTF-2h-ixK"/>
+                            <constraint firstItem="ixK-bP-bVC" firstAttribute="top" secondItem="25f-7f-IuE" secondAttribute="bottom" constant="70" id="aq2-7h-ace"/>
+                            <constraint firstItem="tLS-me-ZuO" firstAttribute="bottom" secondItem="PfM-ss-aLA" secondAttribute="bottom" constant="-655" id="fnC-eB-VPN"/>
+                            <constraint firstItem="tLS-me-ZuO" firstAttribute="trailing" secondItem="PfM-ss-aLA" secondAttribute="trailing" constant="-125" id="hIf-yj-1Cf"/>
+                            <constraint firstItem="97Q-13-PHh" firstAttribute="top" secondItem="ixK-bP-bVC" secondAttribute="bottom" constant="49" id="mPv-gz-glc"/>
+                            <constraint firstItem="97Q-13-PHh" firstAttribute="leading" secondItem="PfM-ss-aLA" secondAttribute="leading" constant="144" id="nh0-hq-Lqt"/>
+                            <constraint firstItem="97Q-13-PHh" firstAttribute="centerX" secondItem="Pou-w1-bBt" secondAttribute="centerX" id="rd5-lB-EEB"/>
+                            <constraint firstItem="97Q-13-PHh" firstAttribute="centerX" secondItem="ixK-bP-bVC" secondAttribute="centerX" id="yxm-Cu-ZUs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AE5-7Y-L5V"/>
                     <connections>
-                        <segue destination="SbI-qy-0PJ" kind="show" identifier="goToPlayGround" id="IX9-G0-bPV"/>
+                        <outlet property="inputPlayerTextField" destination="25f-7f-IuE" id="uyz-vh-DnB"/>
+                        <segue destination="SbI-qy-0PJ" kind="show" identifier="goToPlaygroundScreen" id="xuw-Px-PG8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7R6-ZF-bt7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1901.5267175572519" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1841.9847328244275" y="-276.05633802816902"/>
         </scene>
         <!--Playground View Controller-->
         <scene sceneID="liT-ZD-LpA">
             <objects>
-                <viewController id="SbI-qy-0PJ" customClass="PlaygroundViewController" sceneMemberID="viewController">
+                <viewController id="SbI-qy-0PJ" customClass="PlaygroundViewController" customModule="Kings_Drinking_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3n4-IF-Q6F">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -509,9 +817,12 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="tinted" title="Choose">
                                             <fontDescription key="titleFontDescription" type="italicSystem" pointSize="26"/>
-                                            <color key="baseForegroundColor" red="1" green="0.92179244950000006" blue="0.2178094833" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="1" green="0.1229619013" blue="0.2799628569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="chooseButtonPressed:" destination="SbI-qy-0PJ" eventType="touchUpInside" id="bev-EH-mX2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Background Color"/>
@@ -538,9 +849,9 @@
                         <viewLayoutGuide key="safeArea" id="i4Y-nz-yPf"/>
                         <color key="backgroundColor" name="Background Color"/>
                         <constraints>
-                            <constraint firstItem="uXt-VM-XZI" firstAttribute="top" secondItem="3n4-IF-Q6F" secondAttribute="top" constant="234" id="0Mv-qA-j2t"/>
+                            <constraint firstItem="uXt-VM-XZI" firstAttribute="top" secondItem="i4Y-nz-yPf" secondAttribute="top" constant="131" id="0Mv-qA-j2t"/>
                             <constraint firstItem="fKY-sC-XGf" firstAttribute="top" secondItem="i4Y-nz-yPf" secondAttribute="top" id="52j-kB-1HV"/>
-                            <constraint firstAttribute="bottom" secondItem="uXt-VM-XZI" secondAttribute="bottom" constant="151" id="DJ8-7d-mso"/>
+                            <constraint firstItem="uXt-VM-XZI" firstAttribute="bottom" secondItem="i4Y-nz-yPf" secondAttribute="bottom" constant="-117" id="DJ8-7d-mso"/>
                             <constraint firstItem="uXt-VM-XZI" firstAttribute="leading" secondItem="fKY-sC-XGf" secondAttribute="leading" id="FXE-Qf-3zN"/>
                             <constraint firstItem="gN2-vv-u2l" firstAttribute="trailing" secondItem="i4Y-nz-yPf" secondAttribute="trailing" id="TxE-Bl-Ibc"/>
                             <constraint firstItem="gN2-vv-u2l" firstAttribute="leading" secondItem="i4Y-nz-yPf" secondAttribute="leading" id="aGL-pC-E3Q"/>
@@ -553,10 +864,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NA1-xy-RqW"/>
+                    <connections>
+                        <outlet property="playerTurnLabel" destination="DFo-oS-la8" id="ZbU-wP-x3V"/>
+                        <outlet property="shownCardsImageView" destination="3n4-IF-Q6F" id="bss-WG-MSi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fP4-8B-CKm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2806.8702290076335" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2727" y="-276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lLz-De-itT">
@@ -577,12 +892,14 @@
             <point key="canvasLocation" x="43.511450381679388" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="fMt-Mc-Sde">
+            <size key="intrinsicContentSize" width="374.66666666666669" height="42.333333333333336"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="Background Color">
             <color red="0.36100000143051147" green="0.62699997425079346" blue="0.67799997329711914" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>

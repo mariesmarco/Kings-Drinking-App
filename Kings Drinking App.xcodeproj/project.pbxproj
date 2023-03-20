@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		1B5ECFBE4457FF21A5644C38 /* Pods_Kings_Drinking_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0802E9EF761364CB249C6B9 /* Pods_Kings_Drinking_App.framework */; };
+		F918D90829C7A323000BAFFC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F918D90729C7A323000BAFFC /* WelcomeViewController.swift */; };
 		F981B61C29C646DE00D76F01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981B61B29C646DE00D76F01 /* AppDelegate.swift */; };
 		F981B61E29C646DE00D76F01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981B61D29C646DE00D76F01 /* SceneDelegate.swift */; };
-		F981B62029C646DE00D76F01 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981B61F29C646DE00D76F01 /* WelcomeViewController.swift */; };
 		F981B62329C646DE00D76F01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F981B62129C646DE00D76F01 /* Main.storyboard */; };
 		F981B62529C646DF00D76F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F981B62429C646DF00D76F01 /* Assets.xcassets */; };
 		F981B62829C646DF00D76F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F981B62629C646DF00D76F01 /* LaunchScreen.storyboard */; };
 		F9B02DA829C6587500185433 /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B02DA729C6587500185433 /* PlaygroundViewController.swift */; };
+		F9D0A49D29C7246400816965 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D0A49C29C7246400816965 /* RulesViewController.swift */; };
+		F9E8836729C8551D0083C37C /* QuotesBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8836629C8551D0083C37C /* QuotesBrain.swift */; };
+		F9E8836929C867910083C37C /* PlayersBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8836829C867910083C37C /* PlayersBrain.swift */; };
+		F9E8836B29C8793A0083C37C /* CardImageBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E8836A29C8793A0083C37C /* CardImageBrain.swift */; };
 		F9EDA71F29C6529300130F73 /* ChoosePlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,15 +26,19 @@
 		712FE22A65D443AE18985CE5 /* Pods-Kings Drinking App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kings Drinking App.debug.xcconfig"; path = "Target Support Files/Pods-Kings Drinking App/Pods-Kings Drinking App.debug.xcconfig"; sourceTree = "<group>"; };
 		A0802E9EF761364CB249C6B9 /* Pods_Kings_Drinking_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kings_Drinking_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9688E766807628032ABB5F9 /* Pods-Kings Drinking App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kings Drinking App.release.xcconfig"; path = "Target Support Files/Pods-Kings Drinking App/Pods-Kings Drinking App.release.xcconfig"; sourceTree = "<group>"; };
+		F918D90729C7A323000BAFFC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F981B61829C646DE00D76F01 /* Kings Drinking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kings Drinking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F981B61B29C646DE00D76F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F981B61D29C646DE00D76F01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F981B61F29C646DE00D76F01 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F981B62229C646DE00D76F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F981B62429C646DF00D76F01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F981B62729C646DF00D76F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F981B62929C646DF00D76F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9B02DA729C6587500185433 /* PlaygroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
+		F9D0A49C29C7246400816965 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		F9E8836629C8551D0083C37C /* QuotesBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesBrain.swift; sourceTree = "<group>"; };
+		F9E8836829C867910083C37C /* PlayersBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersBrain.swift; sourceTree = "<group>"; };
+		F9E8836A29C8793A0083C37C /* CardImageBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageBrain.swift; sourceTree = "<group>"; };
 		F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoosePlayersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +105,9 @@
 		F981B62F29C646ED00D76F01 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F9E8836629C8551D0083C37C /* QuotesBrain.swift */,
+				F9E8836829C867910083C37C /* PlayersBrain.swift */,
+				F9E8836A29C8793A0083C37C /* CardImageBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,7 +124,8 @@
 		F981B63129C646F900D76F01 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F981B61F29C646DE00D76F01 /* WelcomeViewController.swift */,
+				F918D90729C7A323000BAFFC /* WelcomeViewController.swift */,
+				F9D0A49C29C7246400816965 /* RulesViewController.swift */,
 				F9EDA71E29C6529300130F73 /* ChoosePlayersViewController.swift */,
 				F9B02DA729C6587500185433 /* PlaygroundViewController.swift */,
 			);
@@ -244,9 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D0A49D29C7246400816965 /* RulesViewController.swift in Sources */,
+				F9E8836B29C8793A0083C37C /* CardImageBrain.swift in Sources */,
+				F9E8836929C867910083C37C /* PlayersBrain.swift in Sources */,
+				F9E8836729C8551D0083C37C /* QuotesBrain.swift in Sources */,
 				F9EDA71F29C6529300130F73 /* ChoosePlayersViewController.swift in Sources */,
-				F981B62029C646DE00D76F01 /* WelcomeViewController.swift in Sources */,
 				F981B61C29C646DE00D76F01 /* AppDelegate.swift in Sources */,
+				F918D90829C7A323000BAFFC /* WelcomeViewController.swift in Sources */,
 				F9B02DA829C6587500185433 /* PlaygroundViewController.swift in Sources */,
 				F981B61E29C646DE00D76F01 /* SceneDelegate.swift in Sources */,
 			);

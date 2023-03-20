@@ -7,7 +7,7 @@ target 'Kings Drinking App' do
 
   # Pods for Kings Drinking App
 	
-	pod 'CLTypingLabel'
+	pod 'CLTypingLabel', ~> '0.4.0'
 
 end
 
